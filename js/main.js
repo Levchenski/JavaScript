@@ -27,8 +27,8 @@ console.log(range);
 
 function calc() {
    this.read = function () {
-      this.a = +prompt('a', 0);
-      this.b = +prompt('b', 0);
+      this.a = +prompt('1 число', 0);
+      this.b = +prompt('2 число', 0);
    };
    this.sum = function () {
       return this.a + this.b;
@@ -36,6 +36,6 @@ function calc() {
 }
 
 let clacul = new calc();
-
 clacul.read();
+
 console.log('result = ' + clacul.sum());
