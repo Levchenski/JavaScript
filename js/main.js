@@ -35,4 +35,7 @@ function calc() {
    };
 }
 
-let clacul = new calc.sum();
+let clacul = new calc();
+
+clacul.read();
+console.log('result = ' + clacul.sum());
