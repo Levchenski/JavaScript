@@ -1,41 +1,15 @@
 let itemOne = document.getElementsByClassName('item')[0];
 let newobj = document.querySelectorAll('.newobj');
 
-let cvn = document.getElementsByTagName('canvas')[0];
-
-newobj[0].prepend(cvn);
-let ctx = cvn.getContext("2d");
-let x, y, w, h;
-x = 100;
-y = 50;
-w = 50;
-h = 50;
-ctx.fillStyle = 'red';
-ctx.fillRect(x, y, w, h);
-ctx.fillStyle = "blue";
-ctx.fillRect(0, y, w, h);
-ctx.clearRect(0, 0, 400, 200);
-ctx.strokeStyle = "green";
-ctx.lineWidth = "10";
-ctx.rect(50, 20, 200, 100);
-ctx.stroke();
-ctx.fillStyle = "blue";
-ctx.fill();
-
-let range = document.querySelector('[type="range"]');
-console.log(range);
-
-function calc() {
-   this.read = function () {
-      this.a = +prompt('1 число', 0);
-      this.b = +prompt('2 число', 0);
-   };
-   this.sum = function () {
-      return this.a + this.b;
-   };
+function obj(name, age, city) {
+   this.name = name;
+   this.age = age;
+   this.city = city;
 }
+const id0 = new obj('Sergey', 23, "St.Petersburg");
 
-let clacul = new calc();
-clacul.read();
+let = Symbol("id");
 
-console.log('result = ' + clacul.sum());
+id0[orId] = 25;
+
+console.log(id0);
