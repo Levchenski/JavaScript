@@ -3,11 +3,12 @@ let is = document.querySelector('[name="range"]').value;
 let bis = document.querySelector('[name="range"]');
 let em = document.querySelector('[type="email"]');
 
-let a = 0;
-let b = 0;
+console.log(true && true);
 
-let o = a || b;
+let hour = 12;
+let minute = 30;
 
-let mesagge = (o) ? 'ok' : 'No';
+let o = (hour == 12 && minute == 30) ? 'Время в щи' : undefined;
 
-console.log(mesagge);
+
+console.log(o);
