@@ -1,4 +1,7 @@
-let newobj = document.querySelectorAll('.newobj');
-let is = document.querySelector('[name="range"]').value;
-let bis = document.querySelector('[name="range"]');
-let em = document.querySelector('[type="email"]');
+let user = {
+    name: 'Serg',
+    age: 23,
+    city: 'St.petersburg',
+}
+
+console.log(user.age);
